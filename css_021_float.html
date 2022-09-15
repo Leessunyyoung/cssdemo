@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_021_float.html</title>
+    <style>
+        /* 
+        float
+        1.float는 박스의 위치를 부모요소의 안에서 왼쪽 또는 오른쪽 이동시키는 기능이다.
+        2.float가 지정된 박스는 문서의 일반적인 흐름에 영향을 받지 않으면서 이동된 위치에 떠있다. */
+
+        .wrap{
+            background-color: gray;
+        }
+        div.wrap div{
+            width: 100px;
+            height: 100px;
+        }
+        .box1{
+            background-color: red;
+            float:left
+        }
+        .box2{
+            background-color: green;
+            float:left;
+        }
+        .box3{
+            background-color: blue;
+            float:right;
+        }
+
+        div.wrap p{
+            clear:both; /*float 해제*/
+        }
+        img{
+            float:left;
+            margin-right: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <p>inline</p>
+    </div>
+    <div class='other' style='background-color:yellow; height:500px'>
+    <img src="images/gosu.jpg" alt="고수 영화배우"/>
+
+    <p>
+        구에서 3년차 신축 아파트를 보유 중인 A씨는 곧 만기가 돌아오는 세입자가 전셋값을 2억원 낮춰달라고 해 고민이 커지고 있다. 세입자는 전세가격을 낮춰주지 않을 경우 이사를 나가겠다고 통보한 상황이다. A씨는 대출을 받기 어려운데다 새로운 세입자를 구할 수 있다는 보장도 없다고 판단해 어떻게든 현 세입자를 잡고 싶다. 주변에서는 세입자에게 2억원에 해당하는 월세를 지급하는 방법을 제안하고 있다.
+
+전국의 아파트 전셋값이 뚝뚝 떨어지면서 집주인들이 ‘역월세’를 다시 고민하기 시작했다. 3년 전 일부 지역에서 매매가격과 전세가격이 동반 내리막을 보이면서 나타났던 현상이 재현된 것이다.
+
+12일 서울 송파구 롯데월드타워 전망대 서울스카이에서 바라본 서울 시내 아파트 단지 모습. /연합뉴스
+12일 서울 송파구 롯데월드타워 전망대 서울스카이에서 바라본 서울 시내 아파트 단지 모습. /연합뉴스
+15일 한국부동산원에 따르면 이달 첫째주 전국 아파트 전세가격은 전주대비 0.16% 하락했다. 내림폭도 전주(-0.15%)에 비해 확대됐다. 전국 176개 시군구 중 하락 지역은 139곳에서 143곳으로 늘었다. 매매가격 하락 영향으로 전세 가격도 하향 조정되고 있는 것인데, 같은 시기 전국 아파트 매매가격은 0.17% 떨어져 한국부동산원 조사 이후 최대 낙폭을 기록했다.
+
+전세가격이 하락하면서 세입자가 ‘갑’이 되는 세입자 우위 시장이 펼쳐지고 있다. 공급과 수요의 우위를 살펴볼 수 있는 아파트 전세수급동향을 보면 전세의 경우 지난달 29일(한국부동산원) 기준 90.2로 2019년 11월 11일(88.3) 이후 가장 낮았다. 수급동향은 0에 가까울수록 공급우위, 200에 가까울수록 수요 우위로 볼 수 있는데, 지금은 공급우위의 분위기가 더욱 강해지고 있는 것이다.
+
+지금처럼 전세가격이 하락하는 세입자 우위시장에서는 ‘역월세’가 번질 가능성이 크다. 임대료 상승기에 전세가격 상승분 만큼 세입자에게 월세를 더 받는 ‘반전세’와 정반대의 현상으로 보면 된다. 가령 세입자가 만기가 도래해 전세가격을 1억원을 낮춰달라고 할 경우 집주인이 30만~35만원 수준의 월세를 세입자에게 내주는 격이다.
+    </p>
+    </div>
+    </body>
+  </body>
+</html>
